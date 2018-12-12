@@ -11,7 +11,9 @@ namespace _12_12_18
         static void Main(string[] args)
         {
             string risultato = " ";
-            int num = 225;
+            int num;
+            Console.WriteLine("inserisci un numero da convertire");
+            num = Convert.ToInt32(Console.ReadLine());
 
             while (num > 1)
             {
