@@ -16,14 +16,11 @@ namespace _12_12_18
             num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("inserisci la base in cui vuoi convertire");
             bbase = Convert.ToInt32(Console.ReadLine());
-            while (num > 1)
-            {
-                int resto = num % 2;
-                risultato = Convert.ToString(resto) + risultato;
-                num = num / 2;
-            }
-            risultato = Convert.ToString(num) + risultato;
-            Console.WriteLine($"il numero binario è{risultato}");
+
+            string convertitore= Convert.ToString(num, bbase);//converto
+           
+            risultato = Convert.ToString(num,bbase) + risultato;
+            Console.WriteLine($"il numero convertito in base{bbase} è{risultato}");
 
             Console.ReadLine();
         }
